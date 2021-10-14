@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+  .header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+      width: 135px;
+      height: 30px;
+    }
+    &__search {
+      form {
+        position: relative;
+        input {
+          width: 763px;
+          height: 40px;
+          border: 1px solid #E5E5E5;
+          border-radius: 5px;
+          padding-left: 40px;
+          background: url("../icons/find.png") no-repeat scroll 10px 50%;
+          font-size: 14px;
+          line-height: 16px;
+          color: #BBC4D6;
+          font-weight: 400;
+        }
+      }
+    }
+    &__profile {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      border-left: 1px solid #EBEBF1;
+      &_name {
+        font-size: 15px;
+        color: #768298;
+        margin: 0px 10px 0px 20px;
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 70px;
+  height: 100vh;
+  background: rgba(229, 229, 229, 0.2);
+  .partner {
+    &__header {
+      font-size: 36px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 160%;
+    }
+    &__wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+    &__item {
+      width: 270px;
+      height: 120px;
+      border: 1px solid #EBEBF1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 30px 30px 0px;
+      &:nth-child(4n+4) {
+        margin-right: 0px;
+      }
+      a {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+}
