@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 768px;
+  }
+  .header {
+    &__search {
+      form {
+        input {
+          width: 344px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {}
